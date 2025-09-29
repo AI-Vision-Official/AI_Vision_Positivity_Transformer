@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positivity Transformer</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+    {
+        "imports": {
+            // Future libraries could be mapped here if needed
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="language-selector-container">
+            <label for="languageSelector" id="languageSelectorLabel">Select Language:</label>
+            <select id="languageSelector">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <!-- Add more languages here as needed -->
+            </select>
+            <div id="languageChangeNote" class="language-note"></div>
+        </div>
+
+        <h1 id="mainTitle">Negativity to Positivity Transformer</h1>
+        <p id="introText">Share your thoughts or feelings. We'll strive to offer a kind, hopeful, and uniquely tailored perspective, helping you reframe them with warmth and understanding.</p>
+        <textarea id="inputText" placeholder="Type something like 'I can't do this.' or 'Today feels awful.'"></textarea>
+        <button id="transformButton">Transform with Positivity!</button>
+        <div class="output-container">
+            <h2 id="outputTitle">A Warm Ray of Positivity For You:</h2>
+            <div id="outputText"></div>
+        </div>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>

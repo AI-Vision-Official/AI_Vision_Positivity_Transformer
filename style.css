@@ -1,0 +1,149 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* AliceBlue */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start for absolutely positioned elements */
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #ffffff; /* White */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    position: relative; /* For positioning the language selector */
+    margin-top: 40px; /* Add some margin to accommodate potential elements above or ensure spacing */
+}
+
+h1 {
+    color: #ff69b4; /* HotPink */
+    margin-bottom: 20px;
+    margin-top: 30px; /* Added margin to ensure space below language selector */
+}
+
+.container > p { /* Target the introductory paragraph directly under container */
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.language-selector-container {
+    position: absolute;
+    top: 15px;      /* Position from the top of the container */
+    right: 20px;     /* Position from the right of the container */
+    display: flex;
+    align-items: center;
+    z-index: 10; /* Ensure it's above other content if overlap occurs */
+}
+
+.language-selector-container label {
+    margin-right: 8px;
+    font-weight: bold;
+    color: #555;
+    font-size: 0.9em; /* Slightly smaller for corner placement */
+}
+
+#languageSelector {
+    padding: 6px 10px; /* Slightly smaller padding */
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 0.9em; /* Slightly smaller font size */
+    background-color: white;
+    cursor: pointer;
+}
+
+#languageSelector:focus {
+    outline: none;
+    border-color: #ff69b4; /* HotPink */
+    box-shadow: 0 0 5px rgba(255, 105, 180, 0.4); /* Softer shadow */
+}
+
+textarea {
+    width: 95%;
+    min-height: 100px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    font-size: 1em;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #ff69b4; /* HotPink */
+    box-shadow: 0 0 5px rgba(255, 105, 180, 0.5);
+}
+
+button {
+    background-color: #ff69b4; /* HotPink */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    margin-top: 10px; /* Added for spacing if multiple buttons */
+}
+
+button:hover {
+    background-color: #ff1493; /* DeepPink */
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#downloadButton {
+    background-color: #4682b4; /* SteelBlue */
+    padding: 10px 20px;
+    font-size: 1em;
+}
+
+#downloadButton:hover {
+    background-color: #4169e1; /* RoyalBlue */
+}
+
+.output-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fffacd; /* LemonChiffon - for a gentle contrast */
+    border-radius: 8px;
+    border: 1px dashed #ffb6c1; /* LightPink border */
+    min-height: 50px;
+    text-align: left; /* Align text to left for readability of paragraphs */
+}
+
+.output-container h2 {
+    color: #ff1493; /* DeepPink */
+    font-size: 1.3em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center; /* Center the heading of output box */
+}
+
+#outputText p { /* Style the paragraph within outputText */
+    font-size: 1.1em;
+    color: #4a4a4a; 
+    line-height: 1.6; /* Increased line-height for readability */
+    white-space: pre-wrap; 
+    text-align: center; /* Center the transformed message */
+    margin: 0; /* Remove default paragraph margin if #outputText itself has padding */
+}
+
+.download-button-wrapper {
+    text-align: center;
+    margin-top: 20px; /* Space above the download button */
+}

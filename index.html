@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflective Insights - A New Perspective</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+    {
+        "imports": {
+            // Future libraries could be mapped here if needed
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Your Space for Reflection</h1>
+        <p>Share your thoughts or feelings. This is a space to explore them from a new perspective, offering gentle reframing and insights rooted in understanding and compassion.</p>
+        
+        <div class="language-selector-container">
+            <label for="languageSelector">Language for Response:</label>
+            <select id="languageSelector">
+                <option value="en">English</option>
+                <option value="es">Español (Spanish)</option>
+                <option value="fr">Français (French)</option>
+                <option value="de">Deutsch (German)</option>
+                <option value="it">Italiano (Italian)</option>
+                <option value="pt">Português (Portuguese)</option>
+                <option value="zh">中文 (Mandarin)</option>
+                <option value="hi">हिन्दी (Hindi)</option>
+                <option value="ar">العربية (Arabic)</option>
+                <option value="ja">日本語 (Japanese)</option>
+            </select>
+        </div>
+
+        <textarea id="inputText" placeholder="Describe a feeling or situation, e.g., 'I feel overwhelmed by work.' or 'I'm struggling with a recent disappointment.'"></textarea>
+        <button id="transformButton">Explore a New Perspective</button>
+        
+        <div class="output-container">
+            <h2>A Thoughtful Reflection For You:</h2>
+            <div id="outputText"></div>
+            <div class="download-button-wrapper">
+                <button id="downloadButton" style="display: none;">Download Reflection</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
